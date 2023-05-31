@@ -24,13 +24,13 @@ Big thanks❤️ to <a href="https://github.com/xIKRATOSx" target="_blank">xIKRA
 # ```Bot Info```
 <p align="center">
 <a href="https://github.com/xIKRATOSx/followers"><img title="Followers" src="https://img.shields.io/github/followers/xIKRATOSx?color=red&style=flat-square"></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD7/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/DGXeon/CheemsBot-MD7?color=blue&style=flat-square"></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD7/network/members"><img title="Forks" src="https://img.shields.io/github/forks/DGXeon/CheemsBot-MD7?color=red&style=flat-square"></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD7/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/DGXeon/CheemsBot-MD7?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD7"><img title="Open Source" src="https://img.shields.io/badge/Author-Xeon%20Bot%20Inc.-red?v=103"></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD7/"><img title="Size" src="https://img.shields.io/github/repo-size/DGXeon/CheemsBot-MD7?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD7&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD7/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/Xeonbot54/XeonBotV7/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Xeonbot54/XeonBotV7?color=blue&style=flat-square"></a>
+<a href="https://github.com/Xeonbot54/XeonBotV7/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Xeonbot54/XeonBotV7?color=red&style=flat-square"></a>
+<a href="https://github.com/Xeonbot54/XeonBotV7/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Xeonbot54/XeonBotV7?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Xeonbot54/XeonBotV7"><img title="Open Source" src="https://img.shields.io/badge/Author-xIKRATOSx%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/Xeonbot54/XeonBotV7/"><img title="Size" src="https://img.shields.io/github/repo-size/Xeonbot54/XeonBotV7?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com/Xeonbot54/XeonBotV7&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/Xeonbot54/XeonBotV7/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
     </p>
@@ -72,9 +72,9 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD7)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com/Xeonbot54/XeonBotV7)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xIKRATOSx/XeonbotV7/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Xeonbot54/XeonBotV7)
 
 # Install Manually 👇
 ## `Requirements`
