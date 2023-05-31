@@ -23,7 +23,7 @@ Big thanks❤️ to <a href="https://github.com/xIKRATOSx" target="_blank">xIKRA
 
 # ```Bot Info```
 <p align="center">
-<a href="https://github.com/DGXeon/followers"><img title="Followers" src="https://img.shields.io/github/followers/DGXeon?color=red&style=flat-square"></a>
+<a href="https://github.com/xIKRATOSx/followers"><img title="Followers" src="https://img.shields.io/github/followers/xIKRATOSx?color=red&style=flat-square"></a>
 <a href="https://github.com/DGXeon/CheemsBot-MD7/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/DGXeon/CheemsBot-MD7?color=blue&style=flat-square"></a>
 <a href="https://github.com/DGXeon/CheemsBot-MD7/network/members"><img title="Forks" src="https://img.shields.io/github/forks/DGXeon/CheemsBot-MD7?color=red&style=flat-square"></a>
 <a href="https://github.com/DGXeon/CheemsBot-MD7/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/DGXeon/CheemsBot-MD7?label=Watchers&color=blue&style=flat-square"></a>
@@ -60,7 +60,7 @@ Scan qr code from the above button, u can pay through GooglePay, Paytm, PhonePe 
 
 # Setup For Deployment 👇
 
-- FORK THE REPOSITORY [Here](https://github.com/DGXeon/CheemsBot-MD7/fork)
+- FORK THE REPOSITORY [Here](https://github.com/Xeonbot54/XeonbotV7/fork)
 
 ## `Scan QR Code For Session`
 [![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Cheems-Bot-Multi-Device-Qr-Code-Generator?output%20only=1&lite=1#index.js)
@@ -74,7 +74,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD7)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD7/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xIKRATOSx/XeonbotV7/)
 
 # Install Manually 👇
 ## `Requirements`
@@ -85,8 +85,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/DGXeon/CheemsBot-MD7.git
-cd CheemsBot-MD7
+git clone https://github.com/Xeonbot54/XeonbotV7.git
+cd XeonbotV7 
 
 npm start
 ```
@@ -102,7 +102,7 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/DGXeon/CheemsBot-MD7
+git clone https://github.com/Xeonbot54/XeonbotV7 
 cd CheemsBot-MD
 npm start
 ```
@@ -114,7 +114,7 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagrmagick
 apt install bash
-git clone https://github.com/DGXeon/CheemsBot-MD7
+git clone https://github.com/Xeonbot54/XeonbotV7 
 cd CheemsBot-MD7
 npm start
 ```
