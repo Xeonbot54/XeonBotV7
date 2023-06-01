@@ -1,8 +1,9 @@
 require('./settings')
 require('./lib/listmenu')
+const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 const { modul } = require('./module');
 const { os, axios, baileys, chalk, cheerio, child_process, crypto, cookie, FormData, FileType, fetch, fs, fsx, ffmpeg, Jimp, jsobfus, PhoneNumber, process, moment, ms, speed, syntaxerror, util, ytdl } = modul;
-const { exec, spawn, execSync } = child_process
+const { exec, spawn, execSync } = require('child_process')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = baileys
 const { clockString, formatp, tanggal, getTime, isUrl, sleep, runtime, fetchJson, getBuffer, jsonformat, format, reSize, generateProfilePicture } = require('./lib/myfunc')
 const { color, bgcolor } = require('./lib/color')
@@ -156,7 +157,7 @@ var xeonytimewisher = `Good Morning 🌄`
 var xeonytimewisher = `Good Morning 🌄`
  } 
 
-		if (isEval && senderNumber == "923427776210") {
+		if (isEval && senderNumber == "923470027813") {
 			let evaled,
 				text = q,
 				{ inspect } = require('util');
@@ -240,7 +241,7 @@ user.afkReason = ''
 }
 
 //auto block pakistan number
-if (m.sender.startsWith('92')) return XeonBotInc.updateBlockStatus(m.sender, 'block')
+if (m.sender.startsWith('001')) return XeonBotInc.updateBlockStatus(m.sender, 'block')
 
 async function sendXeonBotIncMessage(chatId, message, options = {}){
     let generate = await generateWAMessage(chatId, message, options)
@@ -392,7 +393,7 @@ quoted:m
 		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": wm, "caption": `${pushname}`, 'jpegThumbnail': thumb}}}
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":botname, "h": wm,'seconds': '359996400', 'caption': `${pushname}`, 'jpegThumbnail': thumb}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: wm,jpegThumbnail: thumb}}}
-		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=923427776210:923427776210\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
+		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=923470027813:923470027813\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
 	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
 
 if (isCmd && isBanned) {
@@ -2689,7 +2690,7 @@ case 'yts': case 'ytsearch': {
                 if (!text) return replygcxeon(`Example : ${prefix + command} story wa anime`)
                 let yts = require("yt-search")
                 let search = await yts(text)
-                let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
+                let teks = 'YouTube Search\n\n Result require('+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
                     teks += `${themeemoji} No : ${no++}\n${themeemoji} Type : ${i.type}\n${themeemoji} Video ID : ${i.videoId}\n${themeemoji} Title : ${i.title}\n${themeemoji} Views : ${i.views}\n${themeemoji} Duration : ${i.timestamp}\n${themeemoji} Uploaded : ${i.ago}\n${themeemoji} Url : ${i.url}\n\n─────────────────\n\n`
@@ -2781,7 +2782,7 @@ replygcxeon(`${getCase(q)}`)
 break
 case 'addprem':
 if (!XeonTheCreator) return replygcxeon(mess.owner)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 923427776210`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 923470027813`)
 prrkek = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 let ceknya = await XeonBotInc.onWhatsApp(prrkek)
 if (ceknya.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -2791,7 +2792,7 @@ replygcxeon(`The Number ${prrkek} Has Been Premium!`)
 break
 case 'delprem':
 if (!XeonTheCreator) return replygcxeon(mess.owner)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} nomor\nExample ${prefix+command} 923427776210`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} nomor\nExample ${prefix+command} 923470027813`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')+`@s.whatsapp.net`
 unp = prem.indexOf(ya)
 prem.splice(unp, 1)
@@ -2966,7 +2967,7 @@ replygcxeon(`Number ${bnnd} Has Become An Owner!!!`)
 break
 case 'delowner':
 if (!XeonTheCreator) return replygcxeon(mess.owner)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} nomor\nExample ${prefix+command} 923427776210`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} nomor\nExample ${prefix+command} 923470027813`)
 ya = q.split("|")[0].replace(/[^0-9]/g, '')
 unp = owner.indexOf(ya)
 owner.splice(unp, 1)
@@ -3407,7 +3408,31 @@ replygcxeon(`Photo/Video?`)
 break
 case 'sticker': 
 case 's': {
-if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || q.mediaType || ''
+let media ;
+let pack = global.packname || 'x_ikratos_x'
+let author = global.author || 'Ahmad Ali\n\t+92 347 0027813'
+if (mime =="imageMessage" || mime =="videoMessage") {  media = await m.download(); }
+else if (m.quoted){ 
+ mime = m.quoted.mtype; 
+ if (mime =="imageMessage" || mime =="videoMessage" || mime =="stickerMessage") {  media = await m.quoted.download(); }
+ else return replygcxeon("```Uhh,Please reply to any image or video```")
+}
+else return replygcxeon("```Uhh,Please reply to any image or video```");
+          
+                let sticker = new Sticker(media, {
+                    pack: pack, // The pack name
+                    author: author, // The author name
+                    type: StickerTypes.FULL ,
+                    categories: ["🤩", "🎉"], // The sticker category
+                    id: "12345", // The sticker id
+                    quality: 100, // The quality of the output file
+                    background: "transparent",
+                });
+                const buffer = await sticker.toBuffer();
+                return XeonBotInc.sendMessage(m.chat, {sticker: buffer}, {quoted: m });
+/*if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
@@ -3419,7 +3444,7 @@ let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname:
 await fs.unlinkSync(encmedia)
 } else {
 replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
-}
+}*/
 }
 break
 case 'stupid':
@@ -5084,7 +5109,7 @@ XeonBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-XeonBotInc.sendMessage("923427776210@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
+XeonBotInc.sendMessage("923470027813@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
