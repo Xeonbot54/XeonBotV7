@@ -1,5 +1,5 @@
 {
-  "name": "Cheems-Bot-MD",
+  "name": "XeonBotV7",
   "version": "7.0.0",
   "description": "Automated whatsapp md bot created using nodejs and baileys lib",
   "main": "index.js",
@@ -23,10 +23,10 @@
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "npm:@ferdiz-afk/baileys",
-    "@saipulanuar/jadianime-ts": "^2.0.0",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "awesome-phonenumber": "^2.64.0",
+    "@saipulanuar/jadianime-ts": "^2.0.0",
     "anime-wallpaper": "^1.0.2",
+    "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
@@ -34,7 +34,9 @@
     "cookie": "^0.5.0",
     "crypto": "^1.0.1",
     "emoji-api": "^1.0.2",
+    "express": "^4.18.1",
     "fake-useragent": "^1.0.1",
+    "ffmpeg": "^0.0.4",
     "figlet": "^1.5.0",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
@@ -77,21 +79,24 @@
     "request": "^2.88.2",
     "rimraf": "^3.0.2",
     "scrape-primbon": "^1.1.0",
+    "secktor-pack": "^0.0.1-development",
     "spinnies": "^0.5.1",
     "spotifydl-x": "^0.3.0",
     "syntax-error": "*",
     "util": "^0.12.4",
+    "wa-sticker-formatter": "^4.3.2",
     "yargs": "^17.2.1",
     "youtube-yts": "^2.0.0",
+    "youtubedl-core": "^4.11.4",
     "ytdl-core": "^4.11.4",
-    "youtubedl-core": "^4.11.4"
+    "ytdl-secktor": "^0.0.1-development"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xIKRATOSx/CheemsBot-MD7.git"
+    "url": "git+https://github.com/xIKRATOSx/XeonBotV7.git"
   },
   "bugs": {
-    "url": "https://github.com/xIKRATOSx/CheemsBot-MD7/issues"
+    "url": "https://github.com/xIKRATOSx/XeonBotV7/issues"
   },
-  "homepage": "https://github.com/xIKRATOSx/CheemsBot-MD7/#readme"
+  "homepage": "https://github.com/xIKRATOSx/XeonBotV7/#readme"
 }

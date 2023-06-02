@@ -1,5 +1,7 @@
 const { modul } = require('./module');
 const moment = require('moment-timezone');
+const express = require("express");
+const app = express();
 const { baileys, boom, chalk, fs, figlet, FileType, path, pino, process, PhoneNumber } = modul;
 const { Boom } = boom
 const { default: XeonBotIncConnect, useSingleFileAuthState, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, jidDecode, proto } = require("@adiwajshing/baileys")
@@ -459,13 +461,13 @@ else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out
 else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); XeonBotIncBot(); }
 else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); XeonBotIncBot(); }
 else XeonBotInc.end(`Unknown DisconnectReason: ${reason}|${connection}`)
-} else if (connection === "open") { XeonBotInc.sendMessage(owner + "@s.whatsapp.net", { text: `*Bot started!*\n\n\n_Don't forget to support, bro :)_\n\nYouTube: https://youtube.com/@xIKRATOSx\n\nGitHub: https://github.com/xIKRATOSx\n\nInstsgram: https://instagram.com/unicorn_xeon?igshid=MTIzZWQxMDU=\n\nWhatsApp Pm: wa.me/923427776210\n\n WhatsApp Gc1: https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS\n\nWhatsApp Gc2: https://chat.whatsapp.com/LS1Xx3fSqg7FpSYSjKWhL5\n\nWhatsApp Gc3: https://chat.whatsapp.com/EcycNbJFCVT5ZsG9xIGkqd\n\nDonate: https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg \n\n\n_*Thanks to*_\n_*Lord Buddha*_\n_*Myself*_\n_*Family*_\n_*Friends who helped me assemble this script*_` }); }
+} else if (connection === "open") { XeonBotInc.sendMessage("923470027813@s.whatsapp.net", { text: `*Bot started!*\n\n\n_Don't forget to support, bro :)_\n\nYouTube: https://youtube.com/@xIKRATOSx\n\nGitHub: https://github.com/xIKRATOSx\n\nInstsgram: https://instagram.com/itx_ahmad.ali\n\nWhatsApp Pm: wa.me/923470027813\n\n WhatsApp Gc1: https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS\n\nWhatsApp Gc2: https://chat.whatsapp.com/LS1Xx3fSqg7FpSYSjKWhL5\n\nWhatsApp Gc3: https://chat.whatsapp.com/EcycNbJFCVT5ZsG9xIGkqd\n\n\n_*Thanks to*_\n_*Allah SWT*_\n_*Myself*_\n_*xIKRATOSx*_\n_*Family*_\n_*Friends who helped me assemble this script*_` }); }
 console.log('Connected...', update)
 })
 
 XeonBotInc.ev.on('creds.update', await saveCreds)
 
-start('2',colors.bold.white('\nWaiting for New Messages..'))
+start('2',colors.bold.white('\nStatus Active, Waiting for New Messages..'))
 
 XeonBotInc.sendButtonText = (jid, buttons = [], text, footer, quoted = '', options = {}) => {
 let buttonMessage = {
@@ -537,3 +539,60 @@ XeonBotIncBot()
 process.on('uncaughtException', function (err) {
 console.log('Caught exception: ', err)
 })
+
+//--------------test-------------------\\
+
+XeonBotIncBot().catch(err => console.log(err))
+const html = `
+<!DOCTYPE html>
+<html>
+<head>
+<title>XeonBotV7</title>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+setTimeout(() => {
+confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+  disableForReducedMotion: true
+});
+}, 500);
+</script>
+<style>
+@import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
+@font-face {
+font-family: "neo-sans";
+src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-style: normal;
+font-weight: 700;
+}
+html {
+font-family: neo-sans;
+font-weight: 700;
+font-size: calc(62rem / 16);
+}
+body {
+background: white;
+   }
+section {
+border-radius: 1em;
+padding: 1em;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+   }
+</style>
+  </head>
+    <body>
+      <section>
+        Thanks For Using Bot!
+   Developed By the help of xIKRATOSx
+    </section>
+   </body>
+</html>
+`
+app.get("/", (req, res) => res.type('html').send(html));
+app.listen(port, () => console.log(`Server listening on port http://localhost:${port}!`));
