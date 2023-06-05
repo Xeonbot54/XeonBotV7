@@ -32,7 +32,7 @@ global.packname = "Sticker By"
 global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄xIKRATOSx\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +923470027813"
 global.creator = "923470027813@s.whatsapp.net"
 global.prefa = ['','!','.','#','&']
-global.port = '8080'
+global.port = '5000'
 
 //media target
 global.thum = 'https://telegra.ph/file/1b9fc7f9043bb46ad3098.jpg' //ur thumb pic
