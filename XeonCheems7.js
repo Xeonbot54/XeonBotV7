@@ -2721,7 +2721,23 @@ XeonBotInc.sendMessage(m.chat, { image : eek, caption: ngen }, { quoted: m})
 }
 break
 case 'attp': {
-
+if(!text) return m.reply("```Uhh Please, Give Me text```")
+let url = `https://raganork-api.onrender.com/api/attp?text=${text}&apikey=with_love_souravkl11`
+let media  = await getBuffer(url)
+    
+    let sticker = new Sticker(media, {
+        pack: global.packname, 
+        author: global.author, 
+        type: StickerTypes.FULL,
+        categories: ["🤩", "🎉"], 
+        id: "12345", 
+        quality: 100,
+        background: "transparent", 
+                    });
+                    //const buffer = await sticker.toBuffer();
+                    //const { MessageType } = require('@adiwajshing/baileys')
+const buffer = await sticker.toBuffer();
+return XeonBotInc.sendMessage(m.chat, {sticker: buffer}, {quoted: m });
 }
 break
 case 'play':  case 'song': case 'ytmp3': {
