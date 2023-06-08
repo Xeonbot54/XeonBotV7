@@ -10,27 +10,27 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['923470027813'] //ur owner number
-global.ownernomer = "923470027813" //ur owner number2
-global.ownername = "🦄Dream Guy Xeon" //ur owner name
-global.ytname = "YT: xIKRATOSx" //ur yt chanel name
-global.socialm = "GitHub: xIKRATOSx" //ur github or insta name
+global.owner = ['918982860407'] //ur owner number
+global.ownernomer = "918982860407" //ur owner number2
+global.ownername = "🦄leon Xeon" //ur owner name
+global.ytname = "YT: leongaming" //ur yt chanel name
+global.socialm = "GitHub: leongamer001" //ur github or insta name
 global.location = "Pakistan, Punjab, Gujranwala" //ur location
 
 //new
 global.botname = "Cheems Bot MD V7"
-global.ownernumber = '923470027813'
-global.ownername = '🦄드림 가이 Xeon'
-global.ownerNumber = ["923470027813@s.whatsapp.net"]
-global.ownerweb = "https://youtube.com/@xIKRATOSx"
-global.websitex = "https://youtube.com/@xIKRATOSx"
-global.wagc = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS"
+global.ownernumber = '918982860407'
+global.ownername = '🦄leon Xeon'
+global.ownerNumber = ["918982860407@s.whatsapp.net"]
+global.ownerweb = "https://youtube.com/@leongaming9542"
+global.websitex = "https://youtube.com/@leongaming9542"
+global.wagc = "https://chat.whatsapp.com/Kruy2W3755c6wU6DV3IA7V"
 global.themeemoji = '🥀'
 global.wm = "Xeon Bot Inc."
-global.botscript = 'https://github.com/xIKRATOSx/XeonBotV7' //script link
-global.packname = "Sticker By"
-global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄xIKRATOSx\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +923470027813"
-global.creator = "923470027813@s.whatsapp.net"
+global.botscript = 'https://github.com/leongamer001/XeonBotV7' //script link
+global.packname = "Sticker By leon"
+global.author = "Cheems Bot\n\n\nA whatsapp bot developed by\n🦄xIKRATOSx\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +918982860407"
+global.creator = "918982860407@s.whatsapp.net"
 global.prefa = ['','!','.','#','&']
 global.port = '5000'
 
