@@ -2720,30 +2720,49 @@ Copy the link above and type the .ytmp3 link for audio and the .ytmp4 link for v
 XeonBotInc.sendMessage(m.chat, { image : eek, caption: ngen }, { quoted: m})
 }
 break
+case 'attp': {
+if(!text) return m.reply("```Uhh Please, Give Me text```")
+let url = `https://raganork-api.onrender.com/api/attp?text=${text}&apikey=with_love_souravkl11`
+let media  = await getBuffer(url)
+    
+    let sticker = new Sticker(media, {
+        pack: global.packname, 
+        author: global.author, 
+        type: StickerTypes.FULL,
+        categories: ["🤩", "🎉"], 
+        id: "12345", 
+        quality: 100,
+        background: "transparent", 
+                    });
+                    //const buffer = await sticker.toBuffer();
+                    //const { MessageType } = require('@adiwajshing/baileys')
+const buffer = await sticker.toBuffer();
+return XeonBotInc.sendMessage(m.chat, {sticker: buffer}, {quoted: m });
+}
+break
 case 'play':  case 'song': case 'ytmp3': {
-if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
-const xeonplaymp3 = require('./lib/ytdl2')
-const { fetchBuffer } = require("./lib/myfunc2")
-let yts = require("youtube-yts")
-        let search = await yts(text)
-        let anup3k = search.videos[0]
-const pl= await xeonplaymp3.mp3(anup3k.url)
-await XeonBotInc.sendMessage(m.chat,{
-    audio: fs.readFileSync(pl.path),
-    fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
-    contextInfo:{
-        externalAdReply:{
-            title:anup3k.title,
-            body: botname,
-            thumbnail: await fetchBuffer(pl.meta.image),
-            mediaType:2,
-            mediaUrl:anup3k.url,
-        }
+if (!text) return replygcxeon(`Example : ${prefix + command} believer`)
+    const ytdl = require('ytdl-secktor')
+    let urlYt = text;
+    if(m.quoted){ text=m.quoted.text; }
 
-    },
-},{quoted:m})
-await fs.unlinkSync(pl.path)
+    if (!urlYt.startsWith("http")) 
+    {
+        let yts = require("secktor-pack");
+        let search = await yts(text);
+        let anu = search.videos[0];
+        urlYt = anu.url; 
+    }
+    let infoYt = await ytdl.getInfo(urlYt);
+    if (infoYt.videoDetails.lengthSeconds >= 1200) return m.reply(`*Found Your Song, But it was too lengthy, Try Differ Name*`);
+    let titleYt = infoYt.videoDetails.title;   
+m.reply(`_Downloading ${infoYt.videoDetails.title}?_`);
+await XeonBotInc.sendMessage(m.chat, { 
+    audio: { url: urlYt }, 
+    mimetype: 'audio/mpeg', 
+    fileName: `${infoYt.videoDetails.title}.mp3`,
+    caption: 'xIKRATOSx'
+  }, {quoted: m})
 }
 break
 case 'ytmp4': case 'ytvideo': {
